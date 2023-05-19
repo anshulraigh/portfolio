@@ -1,0 +1,120 @@
+/* ---------DESKTOP------------ */
+
+@media (min-width: 64em) {
+  html {
+    font-size: 80%;
+  }
+
+  .section-heading {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* ---HEADER--- */
+
+  .nav-list {
+    display: inline-block;
+    margin-left: 40%;
+  }
+
+  .list-items {
+    display: flex;
+    align-items: flex-end;
+    gap: 2.4rem;
+    list-style: none;
+    align-items: center;
+    transition: all 1s;
+  }
+
+  .list {
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+  }
+
+  .list {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .list::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+    transition: width 0.3s ease;
+  }
+
+  .list:hover::after {
+    width: 100%;
+  }
+
+  .icons {
+    font-size: 1.4rem;
+  }
+
+  .icons:hover,
+  .icons:active {
+    color: #000;
+  }
+
+  /* ---HERO--- */
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 4rem;
+  }
+
+  .hero-heading,
+  .hero-info,
+  .hero-btn {
+    grid-column: 1 / 2;
+  }
+
+  .hero-img-box {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 3;
+  }
+
+  .hero-heading {
+    font-size: 12rem;
+  }
+
+  .hero-btn {
+    align-self: start;
+  }
+
+  .hero-btn:link,
+  .hero-btn:visited {
+    margin-right: 72%;
+    font-size: 0.8rem;
+    padding: 15px 20px;
+  }
+
+  /* ---PROJECTS--- */
+
+  .project-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .project {
+    max-width: 360px;
+  }
+
+  /* SKILLS */
+
+  .skills-container {
+    gap: 20px;
+  }
+}

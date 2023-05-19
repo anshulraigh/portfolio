@@ -1,0 +1,311 @@
+/* 
+-----TYPOGRAPHY-----
+Font sizes (px) :
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+-----SPACING(px)-----
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+
+@font-face {
+  font-family: "freight";
+  src: url("fonts/Freight.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* setting default font-size to 10px; */
+  /* pecentage of users browsers font-size setting */
+  /* (10/16) * 100 */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 350;
+  background-color: #f8f7f3;
+  color: #000;
+}
+
+/* REMOVING THE SCROLLBAR */
+
+section-projects::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust this value to suit your design */
+  margin: 0 auto; /* Centers the container element horizontally */
+}
+
+h1,
+h2 {
+  font-family: "freight", serif;
+  font-weight: 300;
+  color: #000;
+}
+
+.section-heading {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-space {
+  margin-bottom: 6.4rem !important;
+}
+
+/* ---HEADER--- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 4.8rem; */
+  padding: 1.8rem;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 0.4rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.icons {
+  font-size: 1.4rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-btn {
+  border: 0px;
+  background-color: #fbf6e9;
+}
+
+/* ---HERO--- */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin: 0 1.2rem;
+  /* margin-bottom: 4.8rem; */
+}
+
+.hero-heading {
+  font-size: 8.6rem;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+}
+
+.hero-info {
+  color: #222;
+  font-size: 1.2rem;
+  margin-right: 20%;
+  margin-bottom: 0.4rem;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-right: 60%;
+  margin-bottom: 3.2rem;
+  transition: all 0.3s;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* ---ABOUT ME--- */
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 0 1.2rem;
+  /* margin-bottom: 4.8rem; */
+}
+
+.heading-info {
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.tech-stack {
+  display: flex;
+  font-size: 1rem;
+  gap: 1.2rem;
+}
+
+.heading-info-tech {
+  color: #222;
+  font-size: 1.2rem;
+  margin-bottom: -1.2rem;
+}
+
+/* SKILLS */
+
+.section-skills {
+  margin: 0 1.2rem;
+}
+
+.skills-heading {
+  margin-bottom: 3.2rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: left;
+}
+
+.skill-logo {
+  font-size: 4rem;
+  color: #000;
+  stroke-width: 0.2px;
+  margin: 1.6rem;
+}
+
+.react {
+  margin-left: 0;
+}
+
+/* ---PROJECTS--- */
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 0 1.2rem;
+  /* margin-bottom: 4.8rem; */
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+  margin: 20px;
+  flex: 0 0 auto;
+  max-width: 300px;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project img {
+  max-width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-bottom: 1px solid #fff;
+}
+
+.project-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 500;
+}
+
+.project p {
+  margin: 6px 10px;
+  font-size: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 6px 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* ---CONTACT--- */
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 0 1.2rem;
+  /* margin-bottom: 4.8rem; */
+}
+
+.contact-info {
+  color: #222;
+  margin-bottom: -0.4rem;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: -0.4rem;
+}
+
+.email-link {
+  color: #222;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+/* ---FOOTER--- */
+
+.footer {
+  text-align: center;
+  font-weight: 500;
+  color: #222;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+
