@@ -36,7 +36,8 @@ body {
 /* REMOVING THE SCROLLBAR */
 
 section-projects::-webkit-scrollbar {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -65,10 +66,11 @@ h2 {
 
 .header {
   display: flex;
+  flex-shrink: inherit;
   justify-content: space-between;
   align-items: center;
   /* margin-bottom: 4.8rem; */
-  padding: 1.8rem;
+  padding: 1.rem;
 }
 
 .logo {
@@ -178,6 +180,8 @@ h2 {
 /* SKILLS */
 
 .section-skills {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 1.2rem;
 }
 
@@ -187,6 +191,7 @@ h2 {
 
 .skills-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
 }
 
