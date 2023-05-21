@@ -71,7 +71,8 @@ h2 {
   align-items: center;
   /* margin-bottom: 4.8rem; */
   padding: 1.rem;
-  padding-top: 2rem;
+  padding-top:2rem;
+  padding-left: 1rem;
 }
 
 .logo {
@@ -158,6 +159,8 @@ h2 {
   flex-direction: column;
   gap: 2.4rem;
   margin: 0 1.2rem;
+  word-spacing: 0.1rem;
+  text-align: justify;
   /* margin-bottom: 4.8rem; */
 }
 
@@ -182,7 +185,7 @@ h2 {
 
 .section-skills {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   flex-grow: 1;
   margin: 0 1.2rem;
 }
@@ -194,7 +197,7 @@ h2 {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content:left;
 }
 
 .skill-logo {
